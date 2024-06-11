@@ -1,0 +1,22 @@
+1) Was ist eine View in SQL?
+
+    B) Ein gespeichertes SQL-Statement, das als virtuelle Tabelle in der Datenbank existiert und bei Bedarf ausgeführt werden kann.
+
+----------------------------------------------------------------------------------
+
+2) Wofür stehen Stored Procedures in einer relationalen Datenbank?
+
+    C) Für im Voraus geschriebene Abfrageblöcke oder Geschäftslogiken, die innerhalb der Datenbank abgespeichert sind und ausgeführt werden können.
+
+----------------------------------------------------------------------------------
+
+3) Wie rufen Sie eine Stored Procedure mit JDBC auf?
+
+    C) Mithilfe des 'CallableStatement'-Objekts, nachdem Sie einen Aufruf zur 'prepareCall()' Methode einer Connection gemacht haben.
+
+----------------------------------------------------------------------------------
+
+4) Welche Aussage über Views und Stored Procedures ist wahr?
+
+    B) Sowohl Views als auch Stored Procedures können benutzt werden, um Zugriffskontrolle zu implementieren und die Komplexität von SQL-Abfragen zu verbergen.
+

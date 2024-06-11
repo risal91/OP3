@@ -1,0 +1,43 @@
+1) Was ist eine View in SQL?
+
+    A) Eine temporäre Tabelle, die durch ein SQL-Statement erzeugt wird und nicht im Datenbankschema gespeichert ist.
+    B) Ein gespeichertes SQL-Statement, das als virtuelle Tabelle in der Datenbank existiert und bei Bedarf ausgeführt werden kann.
+    C) Ein Tool zur visuellen Gestaltung von Datenbankabfragen.
+    D) Eine Java-Klasse, die für die Darstellung von Daten aus einer SQL-Datenbank verwendet wird.
+
+Richtige Antwort: B) Ein gespeichertes SQL-Statement, das als virtuelle Tabelle in der Datenbank existiert und bei Bedarf ausgeführt werden kann.
+
+----------------------------------------------------------------------------------
+
+2) Wofür stehen Stored Procedures in einer relationalen Datenbank?
+
+    A) Für vordefinierte Funktionen innerhalb der Programmiersprache Java zur Verarbeitung von JDBC-Anfragen.
+    B) Für komplexe Operationen auf dem Dateisystem des Servers, auf dem die Datenbank läuft.
+    C) Für im Voraus geschriebene Abfrageblöcke oder Geschäftslogiken, die innerhalb der Datenbank abgespeichert sind und ausgeführt werden können.
+    D) Für Backupspezifikationen oder Wiederherstellungspläne für den Fall eines Systemausfalls.
+
+Richtige Antwort: C )Für im Voraus geschriebene und kompilierte Abfrageblöcke oder Geschäftslogiken,die innerhalb der daten Bank abgespeichert sind un d ausgeführt werden können.
+
+
+----------------------------------------------------------------------------------
+
+3) Wie rufen Sie eine Stored Procedure mit JDBC auf?
+
+    A) Mit der `execute()`-Methode eines Statement-Objekts.
+    B) Durch Aufruf der `callProcedure()`-Methode einer Connection.
+    C) Mithilfe des `CallableStatement`-Objekts, nachdem Sie einen Aufruf zur `prepareCall()` Methode einer Connection gemacht haben.
+    D) Durch direkte Ausführung eines SELECT Statements, das den Namen der Stored Procedure enthält.
+
+Richtige Antwort: C) Mithilfe des `CallableStatement`-Objekts, nachdem Sie einen Aufruf zur `prepareCall()` Methode einer Connection gemacht haben.
+
+----------------------------------------------------------------------------------
+
+4) Welche Aussage über Views und Stored Procedures ist wahr?
+
+    A) Sowohl Views als auch Stored Procedures speichern physisch Datensätze in der Datenbank.
+    B) Sowohl Views als auch Stored Procedures können benutzt werden, um Zugriffskontrolle zu implementieren und die Komplexität von SQL-Abfragen zu verbergen.
+    C) Views sind ausschließlich auf Schreibzugriffe beschränkt, während Stored Procedures Lesen, Schreiben und andere Arten von Operationen ausführen können.
+    D) Views werden immer serverseitig ausgeführt, während Stored Procedures auf dem Client-Rechner laufen können.
+
+Richtige Antwort: B) Sowohl Views als auch Stored Procedures können benutzt werden, um Zugriffskontrolle zu implementieren und die Komplexität von SQL-Abfragen zu verbergen.
+

@@ -1,0 +1,3 @@
+// Aufgabe ist zu erledigen, wenn Inserts und Updates im Unterricht behandelt wurden!
+Ergänzen Sie das Onlineshop-Beispiel durch Methoden für Inserts und Updates. Verwenden Sie dazu Prepared Statements.
+Testen Sie Ihr Programm.

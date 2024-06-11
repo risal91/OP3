@@ -1,0 +1,6 @@
+/* Erstellen Sie eine Konsolenanwendung zur Verwaltung von Benutzeraccounts.
+    In diesem Beispiel werden Benutzer nur mit Benutzername und Profilbild gespeichert.
+    Erstellen Sie eine Datenbank mit passender Tabelle für Benutzer.
+    Erstellen Sie in Java eine passende Model-Klasse mit Methoden zum Erstellen von Accounts und dem Aktualisieren mit Profilbild.
+    Testen Sie Ihr Programm, indem Sie einen Benutzer erstellen und anschließend diesen mit einem Bild (z.B. der WBS Bildmarke) aktualisieren.
+*/

@@ -1,0 +1,15 @@
+/* Ticketautomat (zum Beispiel für Paketboxen der DHL, ort sich Kunden mit einer generierten Nummer identifizieren müssen, um Pakete abholen zu können)
+
+    Tickets werden gespeichert mit einer ID (Auto_Increment) und einer zufällig erzeugten Nummer zwischen 1000 und 9999.
+
+    Der Automat kann Tickets erstellen. Dabei wird eine Nummer zufällig erzeugt und in der Datenbank eingetragen.
+    Zum Login von Benutzern muss die ID des Tickets und die erzeugte Nummer übergeben werden.
+    Die übergebene Nummer wird mit der Nummer in der Datenbank verglichen und wenn sie übereinstimmen, war der Login erfolgreich.
+
+    Folgende Methoden sollen implementiert werden:
+    public static Ticket createTicket()
+    public static boolean login(int id, int nummer)
+
+    Testen Sie Ihr Programm, indem Sie ein Ticket erstellen lassen und dann durch manuelle Eingabe der Daten den Login versuchen.
+
+ */

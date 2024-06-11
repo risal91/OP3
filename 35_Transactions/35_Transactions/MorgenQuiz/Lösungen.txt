@@ -1,0 +1,15 @@
+1)
+try (Connection connection = MySQL.getConnection();
+    CallableStatement statement = connection.prepareCall("{CALL insertArtikel()}")) // Keine Parameter angegeben (? fehlen)
+{
+    statement.setString(0, bezeichnung); // Index 0 angegeben. Parameter beginnen bei Index 1
+    statement.setBigDecimal(1, preis);
+    statement.setInt(2, hersteller);
+
+    statement.registerOutParameter(3, JDBCType.INTEGER);
+
+    if (statement.executeUpdate() > 0)
+        return statement.getInt(); // Keinen Index übergeben.
+
+    return -1;
+}

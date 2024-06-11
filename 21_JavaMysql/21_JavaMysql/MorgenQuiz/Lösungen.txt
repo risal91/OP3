@@ -1,0 +1,16 @@
+1) Welche Java-Bibliothek wird üblicherweise für die Herstellung einer Verbindung zu einer relationalen Datenbank verwendet?
+
+    A) Java Database Connectivity (JDBC)
+
+----------------------------------------------------------------------------------
+
+2) Welcher JDBC-Komponente ist verantwortlich für das Ausführen von SQL-Statements gegen eine Datenbank?
+
+    C) Statement
+
+----------------------------------------------------------------------------------
+
+3) Wie holt man Daten aus einer Datenbank mit JDBC, nachdem eine Abfrage ausgeführt wurde?
+
+    B) Mit dem ResultSet-Objekt, das von einem Statement-Objekt zurückgegeben wird.
+

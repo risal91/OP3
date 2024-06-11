@@ -1,0 +1,2 @@
+// Aufgabe ist zu erledigen, wenn Inserts und Updates im Unterricht behandelt wurden!
+Ergänzen Sie die Hochbau-Aufgabe durch Hinzufügen von Methoden zum Insert und Update der Daten.

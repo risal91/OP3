@@ -1,0 +1,1 @@
+/* Erstellen Sie für die Kunden Insert- und Update-Prozeduren in MySQL und implementieren Sie in Java die entsprechenden Methoden im Controller */

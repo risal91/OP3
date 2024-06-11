@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/20_JavaMysql/20_JavaMysql.iml" filepath="$PROJECT_DIR$/20_JavaMysql/20_JavaMysql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/21_JavaMysql/21_JavaMysql.iml" filepath="$PROJECT_DIR$/21_JavaMysql/21_JavaMysql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/25_ViewsProcedures/25_ViewsProcedures.iml" filepath="$PROJECT_DIR$/25_ViewsProcedures/25_ViewsProcedures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/30_Binarydata/30_Binarydata.iml" filepath="$PROJECT_DIR$/30_Binarydata/30_Binarydata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/35_Transactions/35_Transactions.iml" filepath="$PROJECT_DIR$/35_Transactions/35_Transactions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/OP3.iml" filepath="$PROJECT_DIR$/.idea/OP3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Onlineshop/Onlineshop.iml" filepath="$PROJECT_DIR$/Onlineshop/Onlineshop.iml" />
+    </modules>
+  </component>
+</project>
