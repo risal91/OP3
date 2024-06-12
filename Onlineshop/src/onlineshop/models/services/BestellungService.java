@@ -3,6 +3,7 @@ package onlineshop.models.services;
 import onlineshop.MySQL;
 import onlineshop.models.Adresse;
 import onlineshop.models.Bestellung;
+import onlineshop.models.Hersteller;
 import onlineshop.models.Kunde;
 
 import java.sql.*;
@@ -58,5 +59,22 @@ public class BestellungService {
         }
 
         return b;
+    }
+
+    public static boolean updateBestellung(Bestellung bestellung, String attribut, Object wert){
+        try (Connection connection = MySQL.getConnection();
+             PreparedStatement statement = connection.prepareStatement(
+                     "UPDATe bestellung SET "+ attribut + " = ? WHERE nummer = "+ bestellung.getNummer()
+             )){
+            statement.setObject(1,wert);
+
+            int betroffenerDatensatz =  statement.executeUpdate();
+
+            return betroffenerDatensatz == 1;
+
+        }catch (SQLException e){
+            e.printStackTrace();
+            return false;
+        }
     }
 }

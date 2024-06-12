@@ -7,6 +7,9 @@
       <module fileurl="file://$PROJECT_DIR$/25_ViewsProcedures/25_ViewsProcedures.iml" filepath="$PROJECT_DIR$/25_ViewsProcedures/25_ViewsProcedures.iml" />
       <module fileurl="file://$PROJECT_DIR$/30_Binarydata/30_Binarydata.iml" filepath="$PROJECT_DIR$/30_Binarydata/30_Binarydata.iml" />
       <module fileurl="file://$PROJECT_DIR$/35_Transactions/35_Transactions.iml" filepath="$PROJECT_DIR$/35_Transactions/35_Transactions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Bank/Bank.iml" filepath="$PROJECT_DIR$/Bank/Bank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Bildverarbeitung/Bildverarbeitung.iml" filepath="$PROJECT_DIR$/Bildverarbeitung/Bildverarbeitung.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Buchhandel/Buchhandel.iml" filepath="$PROJECT_DIR$/Buchhandel/Buchhandel.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/OP3.iml" filepath="$PROJECT_DIR$/.idea/OP3.iml" />
       <module fileurl="file://$PROJECT_DIR$/Onlineshop/Onlineshop.iml" filepath="$PROJECT_DIR$/Onlineshop/Onlineshop.iml" />
     </modules>

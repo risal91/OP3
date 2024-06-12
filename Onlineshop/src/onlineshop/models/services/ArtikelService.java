@@ -58,4 +58,21 @@ public class ArtikelService {
         return a;
     }
 
+    public static boolean updateArtikel(Artikel artikel, String attribut, Object wert){
+        try (Connection connection = MySQL.getConnection();
+             PreparedStatement statement = connection.prepareStatement(
+                     "UPDATe artikel SET "+ attribut + " = ? WHERE nummer = "+ artikel.getNummer()
+             )){
+            statement.setObject(1,wert);
+
+            int betroffenerDatensatz =  statement.executeUpdate();
+
+            return betroffenerDatensatz == 1;
+
+        }catch (SQLException e){
+            e.printStackTrace();
+            return false;
+        }
+    }
+
 }

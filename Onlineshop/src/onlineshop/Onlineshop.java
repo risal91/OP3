@@ -5,10 +5,26 @@ import onlineshop.models.*;
 import onlineshop.models.services.*;
 
 import java.math.BigDecimal;
-import java.sql.Date;
+import java.sql.*;
 import java.time.LocalDate;
 
 public class Onlineshop {
+
+    public static void ausgabe(String tabelle){
+        try (Connection connection = MySQL.getConnection();
+             Statement statement = connection.createStatement()){
+            ResultSet resultSet = statement.executeQuery("SELECT * FROM " + tabelle);
+
+            while (resultSet.next()) {
+                for (int i = 1; i <= resultSet.getMetaData().getColumnCount(); i++) {
+                    System.out.print(resultSet.getString(i) + "\t");
+                }
+                System.out.println("");
+            }
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+    }
 
     public static void main(String[] args) {
 
@@ -19,53 +35,10 @@ public class Onlineshop {
         BestellungService.selectBestellung();
         BerstellpositionService.selectBestellposition();
 
-//        HerstellerService.createHersteller("Bfone");
-//        KundeService.creatKunde("Marco Polo");
-//        Adresse adresse = AdresseService.creatadresse("Hauptring 1","55663","Haupthausen",Kunde.kundeMap.get(123123127));
-//        Artikel artikel = ArtikelService.creatArtikel("Handy", BigDecimal.valueOf(1899.99), Hersteller.herstellerMap.get(5));
-//        Bestellung bestellung = BestellungService.createBestellung(Date.valueOf(LocalDate.now()),Kunde.kundeMap.get(123123127),Adresse.adresseMap.get(5),Adresse.adresseMap.get(4));
-//        Bestellposition bestellposition = BerstellpositionService.createbestellposition(Bestellung.bestellungMap.get(5),Artikel.artikelMap.get(6),1);
+       //KundeService.updateKunde(Kunde.kundeMap.get(123123124),"name","Sanchez");
+      //ArtikelService.updateArtikel(Artikel.artikelMap.get(1),"preis","249.99");
 
-
-
-//        System.out.println("Kunden:\n");
-//
-//        for (Kunde k : Kunde.kundeMap.values()){
-//            System.out.println(k);
-//        }
-//
-//        System.out.println("");
-//        System.out.println("");
-//
-//        System.out.println("Artikel:\n");
-//
-//        for (Artikel a : Artikel.artikelMap.values()){
-//            System.out.println(a);
-//        }
-//
-//        System.out.println("");
-//        System.out.println("");
-//
-//        System.out.println("Bestellung:\n");
-//        for (Bestellung b : Bestellung.bestellungMap.values()){
-//            System.out.println(b);
-//        }
-//
-//        System.out.println("");
-//        System.out.println("");
-//        System.out.println("Hersteller:\n");
-//        for (Hersteller h : Hersteller.herstellerMap.values()){
-//            System.out.println(h);
-//        }
-//
-//        System.out.println("");
-//        System.out.println("");
-//
-        System.out.println("Bestellpositionen:\n");
-        for (Bestellposition bb : Bestellposition.bestellpositionListe){
-            System.out.println(bb);
-            System.out.println("");
-        }
+        ausgabe("artikel");
 
     }
 }

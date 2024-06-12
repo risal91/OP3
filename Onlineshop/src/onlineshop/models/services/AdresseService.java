@@ -2,6 +2,7 @@ package onlineshop.models.services;
 
 import onlineshop.MySQL;
 import onlineshop.models.Adresse;
+import onlineshop.models.Hersteller;
 import onlineshop.models.Kunde;
 
 import java.sql.*;
@@ -55,4 +56,22 @@ public class AdresseService {
         }
         return a;
     }
+
+    public static boolean updateAdresse(Adresse adresse, String attribut, Object wert){
+        try (Connection connection = MySQL.getConnection();
+             PreparedStatement statement = connection.prepareStatement(
+                     "UPDATe adresse SET "+ attribut + " = ? WHERE id = "+ adresse.getId()
+             )){
+            statement.setObject(1,wert);
+
+            int betroffenerDatensatz =  statement.executeUpdate();
+
+            return betroffenerDatensatz == 1;
+
+        }catch (SQLException e){
+            e.printStackTrace();
+            return false;
+        }
+    }
+
 }

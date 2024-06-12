@@ -1,0 +1,35 @@
+package buchhandel.models;
+
+import java.time.LocalDate;
+import java.util.HashMap;
+import java.util.Map;
+
+public class Ausleihe {
+    public static final HashMap<Buch, Ausleihe> ausleihen = new HashMap<>();
+
+    private final Buch buch;
+    private final Kunde kunde;
+    private final LocalDate datum;
+    private final int dauer;
+
+    public Ausleihe(Buch buch, Kunde kunde, LocalDate datum, int dauer)
+    {
+        this.buch = buch;
+        this.kunde = kunde;
+        this.datum = datum;
+        this.dauer = dauer;
+
+        ausleihen.put(buch, this);
+    }
+
+    @Override
+    public String toString()
+    {
+        return "Ausleihe{" +
+                "buch=" + buch +
+                ", kunde=" + kunde +
+                ", datum=" + datum +
+                ", dauer=" + dauer +
+                '}';
+    }
+}

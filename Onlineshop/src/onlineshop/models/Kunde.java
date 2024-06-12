@@ -1,5 +1,7 @@
 package onlineshop.models;
 
+import onlineshop.models.services.KundeService;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -27,7 +29,13 @@ public class Kunde {
     }
 
     public void setName(String name) {
-        this.name = name;
+        if (KundeService.updateKunde(this,"name",name))
+        {
+            this.name =name;
+        }
+
+        this.name =name;
+
     }
 
     @Override

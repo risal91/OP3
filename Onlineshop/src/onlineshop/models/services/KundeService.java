@@ -48,4 +48,21 @@ public class KundeService {
 
         return k;
     }
+
+    public static boolean updateKunde(Kunde kunde, String attribut, Object wert){
+        try (Connection connection = MySQL.getConnection();
+        PreparedStatement statement = connection.prepareStatement(
+                "UPDATe kunde SET "+ attribut + " = ? WHERE nummer = "+ kunde.getNummer()
+        )){
+            statement.setObject(1,wert);
+
+            int betroffenerDatensatz =  statement.executeUpdate();
+
+            return betroffenerDatensatz == 1;
+
+        }catch (SQLException e){
+            e.printStackTrace();
+            return false;
+        }
+    }
 }
